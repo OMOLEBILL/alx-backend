@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 """ In this module we impliment the get and put methods
 """
@@ -30,7 +30,4 @@ class BasicCache(BaseCaching):
         return:
             the value of teh given key
         """
-        if key and key in self.cache_data:
-            return self.cache_data.get(key)
-        else:
-            return None
+        return self.cache_data.get(key)
