@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-""" BaseCaching module
+
+""" In this module we impliment the get and put methods
 """
+
+
 BaseCaching = __import__("BaseCaching").BaseCaching
 
 
