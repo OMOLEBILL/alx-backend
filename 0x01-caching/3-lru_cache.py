@@ -28,7 +28,7 @@ class LRUCache(BaseCaching):
             Nonething but update the self.cache_data
         """
         if key is None or item is None:
-           return
+            return
         if len(self.cache_data) == BaseCaching.MAX_ITEMS:
             if key not in self.cache_data:
                 index = self.key.pop(0)
@@ -37,7 +37,7 @@ class LRUCache(BaseCaching):
         if key in self.key:
             self.key.remove(key)
         self.cache_data[key] = item
-        self.key.append(key) 
+        self.key.append(key)
 
     def get(self, key):
         """ we retrieve the value of the given key if it's not None and
